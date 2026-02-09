@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            lucide.createIcons();
+        });
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maruthi Yukta Solutions - Professional Facility Management Services</title>
@@ -181,6 +187,8 @@
             cursor: pointer;
             transition: all 0.3s ease;
             text-transform: uppercase;
+            text-decoration: none;
+            display: inline-block;
         }
 
             .btn-primary:hover {
@@ -250,6 +258,7 @@
             .service-icon svg {
                 width: 70px;
                 height: 70px;
+                color: var(--primary-color);
             }
 
         .service-card h3 {
@@ -332,6 +341,26 @@
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
+            }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 70px 20px;
+            background: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+        }
+
+            .contact-section h2 {
+                font-size: 2.2rem;
+                margin-bottom: 15px;
+            }
+
+            .contact-section p {
+                max-width: 700px;
+                margin: auto;
+                margin-bottom: 30px;
+                font-size: 1.1rem;
             }
 
         /* Footer */
@@ -564,9 +593,15 @@
                         <a href="#services">Fire & Security</a>
                         <a href="#services">Plumbing</a>
                         <a href="#services">Electrical</a>
+                        <a href="#services">Carpentry</a>
+                        <a href="#services">Cleaning</a>
+                        <a href="#services">Pest Control</a>
+                        <a href="#services">AMC</a>
+                        <a href="#services">Renovation</a>
+                        <a href="#services">Manpower</a>
+                        <a href="#services">Repairs & Maintenance</a>
                     </div>
                 </li>
-                <li><a href="#interior">Interior Design</a></li>
                 <li><a href="#partner">Partner With Us</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
@@ -582,13 +617,11 @@
     <section class="hero" id="home">
         <div class="hero-content">
             <h1>COMPLETE FACILITY MANAGEMENT SOLUTIONS</h1>
-
             <p>
                 Maruthi Yukta Solutions delivers reliable end-to-end facility services —
                 from plumbing, electrical & carpentry to cleaning, pest control, AMC,
                 fire & security, manpower, renovations, and maintenance.
             </p>
-
             <div style="margin-top:25px; display:flex; gap:15px; justify-content:center; flex-wrap:wrap;">
                 <a href="tel:+917396059289" class="btn-primary">
                     📞 Call Us: +91 73960 59289
@@ -600,135 +633,80 @@
         </div>
     </section>
 
-
     <!-- Our Services Section -->
     <section class="services" id="services">
         <div class="container">
             <h2>Our Services</h2>
-            <p class="services-intro">Our team of experts is dedicated to providing you with the highest quality of service. We use the latest technology and techniques to keep your property clean, safe, and secure.</p>
-
+            <p class="services-intro">
+                End-to-end facility management services for residential
+                and commercial spaces.
+            </p>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
-                        <svg viewBox="0 0 100 100">
-                            <path d="M30 40h40v30H30z M35 40v-5 M65 40v-5 M40 70h20v10H40z" stroke="#1abc9c" stroke-width="2" fill="none" />
-                        </svg>
+                        <i data-lucide="droplets"></i>
                     </div>
                     <h3>Plumbing</h3>
                 </div>
-
                 <div class="service-card">
                     <div class="service-icon">
-                        <svg viewBox="0 0 100 100">
-                            <path d="M50 20L75 35v30H25V35L50 20z M35 50v15 M65 50v15" stroke="#1abc9c" stroke-width="2" fill="none" />
-                        </svg>
+                        <i data-lucide="home"></i>
                     </div>
                     <h3>Renovation</h3>
                 </div>
-
                 <div class="service-card">
                     <div class="service-icon">
-                        <svg viewBox="0 0 100 100">
-                            <rect x="25" y="30" width="50" height="35" stroke="#1abc9c" stroke-width="2" fill="none" />
-                            <circle cx="40" cy="50" r="4" fill="#1abc9c" />
-                            <circle cx="60" cy="50" r="4" fill="#1abc9c" />
-                        </svg>
-                    </div>
-                    <h3>Appliances</h3>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 100 100">
-                            <path d="M40 25L50 20L60 25v50H40z M45 45h10 M45 55h10" stroke="#1abc9c" stroke-width="2" fill="none" />
-                        </svg>
-                    </div>
-                    <h3>Painting</h3>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 100 100">
-                            <path d="M25 30h50v40H25z M35 30v-5 M65 30v-5 M40 70l-8 10h36l-8-10" stroke="#1abc9c" stroke-width="2" fill="none" />
-                        </svg>
+                        <i data-lucide="zap"></i>
                     </div>
                     <h3>Electrical</h3>
                 </div>
-
                 <div class="service-card">
                     <div class="service-icon">
-                        <svg viewBox="0 0 100 100">
-                            <path d="M50 20c15 0 25 10 25 25s-10 25-25 25-25-10-25-25 10-25 25-25z M50 35v15 M43 42h14" stroke="#1abc9c" stroke-width="2" fill="none" />
-                        </svg>
+                        <i data-lucide="brush"></i>
+                    </div>
+                    <h3>Painting</h3>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="bug"></i>
                     </div>
                     <h3>Pest Control</h3>
                 </div>
-
                 <div class="service-card">
                     <div class="service-icon">
-                        <svg viewBox="0 0 100 100">
-                            <path d="M35 35l15-10l15 10v25H35z M45 45v15 M55 45v15" stroke="#1abc9c" stroke-width="2" fill="none" />
-                        </svg>
+                        <i data-lucide="hammer"></i>
                     </div>
                     <h3>Carpentry</h3>
                 </div>
-
                 <div class="service-card">
                     <div class="service-icon">
-                        <svg viewBox="0 0 100 100">
-                            <path d="M30 50h40 M50 30v40 M35 45c0-5 5-10 15-10s15 5 15 10" stroke="#1abc9c" stroke-width="2" fill="none" />
-                        </svg>
+                        <i data-lucide="spray-can"></i>
                     </div>
                     <h3>Cleaning</h3>
                 </div>
-
                 <div class="service-card">
                     <div class="service-icon">
-                        <svg viewBox="0 0 100 100">
-                            <circle cx="50" cy="45" r="12" stroke="#1abc9c" stroke-width="2" fill="none" />
-                            <path d="M50 30v30 M38 45h24" stroke="#1abc9c" stroke-width="2" fill="none" />
-                            <circle cx="35" cy="65" r="3" fill="#1abc9c" />
-                            <circle cx="50" cy="68" r="3" fill="#1abc9c" />
-                            <circle cx="65" cy="65" r="3" fill="#1abc9c" />
-                        </svg>
+                        <i data-lucide="users"></i>
                     </div>
                     <h3>Manpower</h3>
                 </div>
-
                 <div class="service-card">
                     <div class="service-icon">
-                        <svg viewBox="0 0 100 100">
-                            <path d="M25 35h50v30H25z M30 35h40v-5H30z M35 65h30v10H35z" stroke="#1abc9c" stroke-width="2" fill="none" />
-                        </svg>
+                        <i data-lucide="shield-check"></i>
                     </div>
                     <h3>Fire & Security</h3>
                 </div>
-
                 <div class="service-card">
                     <div class="service-icon">
-                        <svg viewBox="0 0 100 100">
-                            <path d="M30 40h40v25H30z M40 40v-8 M60 40v-8 M35 65h30v8H35z" stroke="#1abc9c" stroke-width="2" fill="none" />
-                        </svg>
+                        <i data-lucide="calendar-check"></i>
                     </div>
                     <h3>AMC</h3>
                 </div>
-
                 <div class="service-card">
                     <div class="service-icon">
-                        <svg viewBox="0 0 100 100">
-                            <path d="M25 45h50 M50 25v50 M35 35l-8-8 M65 35l8-8 M35 65l-8 8 M65 65l8 8" stroke="#1abc9c" stroke-width="2" fill="none" />
-                        </svg>
+                        <i data-lucide="wrench"></i>
                     </div>
                     <h3>Repairs & Maintenance</h3>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 100 100">
-                            <path d="M30 35h40v30H30z M35 35h30v-8H35z M40 65h20v10H40z M45 45h10 M45 55h10" stroke="#1abc9c" stroke-width="2" fill="none" />
-                        </svg>
-                    </div>
-                    <h3>Plumbing, Electrical & Carpentry</h3>
                 </div>
             </div>
         </div>
@@ -739,38 +717,36 @@
         <div class="container about-content">
             <div class="about-text">
                 <h2>ABOUT MARUTHI YUKTA SOLUTIONS</h2>
-                <p>Maruthi Yukta Solutions is a leading on-demand facility management service platform that delivers exceptional end-to-end services for your properties. Whether you need help with corporate offices, commercial spaces, retail, banking & non-banking, healthcare, IT parks, or residential properties, we are here to help you.</p>
-
+                <p>Maruthi Yukta Solutions is a leading on-demand facility management service platform that delivers exceptional end-to-end services for your properties. Whether you need help with corporate offices, commercial spaces, or residential properties, we are here to help you.</p>
                 <p>We also offer a wide range of other services, including:</p>
-
                 <div class="about-features">
                     <div class="feature-item">
-                        <svg class="check-icon" viewBox="0 0 24 24">
-                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="#1abc9c" />
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 6L9 17L4 12" stroke="#1abc9c" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <span>Maintenance and repairs</span>
                     </div>
                     <div class="feature-item">
-                        <svg class="check-icon" viewBox="0 0 24 24">
-                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="#1abc9c" />
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 6L9 17L4 12" stroke="#1abc9c" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <span>Janitorial services</span>
                     </div>
                     <div class="feature-item">
-                        <svg class="check-icon" viewBox="0 0 24 24">
-                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="#1abc9c" />
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 6L9 17L4 12" stroke="#1abc9c" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <span>Landscape and groundskeeping</span>
                     </div>
                     <div class="feature-item">
-                        <svg class="check-icon" viewBox="0 0 24 24">
-                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="#1abc9c" />
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 6L9 17L4 12" stroke="#1abc9c" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <span>Security services</span>
                     </div>
                     <div class="feature-item">
-                        <svg class="check-icon" viewBox="0 0 24 24">
-                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="#1abc9c" />
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 6L9 17L4 12" stroke="#1abc9c" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <span>Pest control</span>
                     </div>
@@ -784,12 +760,12 @@
         </div>
     </section>
 
-    <section id="contact" style="padding:70px 20px;background:#1abc9c;color:#fff;text-align:center;">
-        <h2 style="font-size:2.2rem;margin-bottom:15px;">Need Immediate Assistance?</h2>
-        <p style="max-width:700px;margin:auto;margin-bottom:30px;font-size:1.1rem;">
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <h2>Need Immediate Assistance?</h2>
+        <p>
             Call us now or drop a mail — our team is ready to help you with reliable facility management services.
         </p>
-
         <div style="display:flex;justify-content:center;gap:20px;flex-wrap:wrap;">
             <a href="tel:+917396059289" class="btn-primary" style="background:#fff;color:#1abc9c;">📞 Call Now</a>
             <a href="mailto:support@maruthiyukta.com" class="btn-primary" style="background:#fff;color:#1abc9c;">✉️ Email Us</a>
@@ -806,7 +782,6 @@
                 </div>
                 <p>Your Satisfaction Is Our Top Priority.</p>
             </div>
-
             <div class="footer-section">
                 <h3>Our Services</h3>
                 <ul>
@@ -817,7 +792,6 @@
                     <li><a href="#services">Repairs & Maintenance</a></li>
                 </ul>
             </div>
-
             <div class="footer-section">
                 <h3>More Services</h3>
                 <ul>
@@ -829,11 +803,7 @@
                     <li><a href="#services">Renovation</a></li>
                 </ul>
             </div>
-
-
-
             <div class="footer-section contact-info">
-
                 <div class="contact-item">
                     <span class="icon">📍</span>
                     <p>Plot No 5&6 Ushodayacolony-2,Medchal-Malkajgiri,Hyderabad,Telangana 500055</p>
@@ -848,14 +818,8 @@
                 </div>
             </div>
         </div>
-
         <div class="footer-bottom">
-            <p>&copy; 2024 Maruthi Yukta Solutions Private Limited. All Rights Reserved.</p>
-            <div class="footer-links">
-                <a href="#privacy">Privacy Policy</a>
-                <span>|</span>
-                <a href="#terms">Terms & Conditions</a>
-            </div>
+            <p>&copy; 2025 Maruthi Yukta Solutions Private Limited. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -890,8 +854,15 @@
         });
 
         // Button Click Handler
-        document.querySelector('.btn-primary').addEventListener('click', function () {
-            alert('Thank you for your interest! Our team will contact you shortly.');
+        document.querySelectorAll('.btn-primary').forEach(btn => {
+            if (!btn.href.includes('tel:') && !btn.href.includes('mailto:')) {
+                btn.addEventListener('click', function (e) {
+                    if (!this.href.includes('#contact')) {
+                        e.preventDefault();
+                        alert('Thank you for your interest! Our team will contact you shortly.');
+                    }
+                });
+            }
         });
 
         // Service Card Animation
@@ -909,6 +880,15 @@
         }
 
         window.addEventListener('resize', handleNavigation);
+
+        // Reinitialize Lucide icons after DOM changes
+        function refreshIcons() {
+            lucide.createIcons();
+        }
+
+        // Refresh icons on page load and after animations
+        document.addEventListener('DOMContentLoaded', refreshIcons);
+        window.addEventListener('load', refreshIcons);
     </script>
 </body>
 </html>
