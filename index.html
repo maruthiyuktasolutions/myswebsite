@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Company - Professional Services</title>
+    <title>Maruthi Yukta Solutions - Professional Facility Management Services</title>
     <style>
         * {
             margin: 0;
@@ -12,7 +12,7 @@
         }
 
         :root {
-            --primary-color: #00a878;
+            --primary-color: #1abc9c;
             --secondary-color: #ffd60a;
             --dark-bg: #1a1a1a;
             --light-bg: #f5f5f5;
@@ -49,19 +49,22 @@
         .logo {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 15px;
             font-weight: bold;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
 
-        .logo img {
-            height: 50px;
-            width: auto;
-        }
+            .logo img {
+                height: 60px;
+                width: auto;
+                object-fit: contain;
+            }
 
         .logo-text {
             color: var(--text-dark);
             font-weight: 700;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
         }
 
         .nav-links {
@@ -71,16 +74,16 @@
             align-items: center;
         }
 
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text-dark);
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
+            .nav-links a {
+                text-decoration: none;
+                color: var(--text-dark);
+                font-weight: 500;
+                transition: color 0.3s ease;
+            }
 
-        .nav-links a:hover {
-            color: var(--primary-color);
-        }
+                .nav-links a:hover {
+                    color: var(--primary-color);
+                }
 
         .dropdown {
             position: relative;
@@ -117,10 +120,10 @@
             text-align: left;
         }
 
-        .dropdown-content a:hover {
-            background-color: var(--light-bg);
-            color: var(--primary-color);
-        }
+            .dropdown-content a:hover {
+                background-color: var(--light-bg);
+                color: var(--primary-color);
+            }
 
         .hamburger {
             display: none;
@@ -128,13 +131,13 @@
             cursor: pointer;
         }
 
-        .hamburger span {
-            width: 25px;
-            height: 3px;
-            background-color: var(--text-dark);
-            margin: 5px 0;
-            transition: 0.3s;
-        }
+            .hamburger span {
+                width: 25px;
+                height: 3px;
+                background-color: var(--text-dark);
+                margin: 5px 0;
+                transition: 0.3s;
+            }
 
         /* Hero Section */
         .hero {
@@ -168,8 +171,8 @@
         }
 
         .btn-primary {
-            background-color: var(--secondary-color);
-            color: var(--text-dark);
+            background-color: var(--primary-color);
+            color: var(--white);
             padding: 12px 40px;
             border: none;
             border-radius: 4px;
@@ -180,11 +183,11 @@
             text-transform: uppercase;
         }
 
-        .btn-primary:hover {
-            background-color: #f5b800;
-            transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(255,214,10,0.3);
-        }
+            .btn-primary:hover {
+                background-color: #16a085;
+                transform: scale(1.05);
+                box-shadow: 0 4px 12px rgba(26,188,156,0.3);
+            }
 
         /* Container */
         .container {
@@ -199,12 +202,12 @@
             background-color: var(--light-bg);
         }
 
-        .services h2 {
-            font-size: 2.5rem;
-            text-align: center;
-            margin-bottom: 1.5rem;
-            color: var(--text-dark);
-        }
+            .services h2 {
+                font-size: 2.5rem;
+                text-align: center;
+                margin-bottom: 1.5rem;
+                color: var(--text-dark);
+            }
 
         .services-intro {
             text-align: center;
@@ -231,10 +234,10 @@
             cursor: pointer;
         }
 
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-        }
+            .service-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+            }
 
         .service-icon {
             height: 80px;
@@ -244,10 +247,10 @@
             justify-content: center;
         }
 
-        .service-icon svg {
-            width: 70px;
-            height: 70px;
-        }
+            .service-icon svg {
+                width: 70px;
+                height: 70px;
+            }
 
         .service-card h3 {
             color: var(--text-dark);
@@ -313,19 +316,23 @@
             justify-content: center;
         }
 
-        .mascot-placeholder {
+        .company-logo-display {
             width: 300px;
-            height: 350px;
-            background: linear-gradient(135deg, #00a878 0%, #00d9a3 100%);
+            height: 300px;
+            background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);
             border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--white);
-            font-size: 1.2rem;
-            font-weight: 600;
-            text-align: center;
+            padding: 20px;
+            box-shadow: 0 8px 24px rgba(26,188,156,0.2);
         }
+
+            .company-logo-display img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
 
         /* Footer */
         .footer {
@@ -350,15 +357,16 @@
             margin-bottom: 1rem;
         }
 
-        .footer-logo img {
-            height: 40px;
-            width: auto;
-        }
+            .footer-logo img {
+                height: 50px;
+                width: auto;
+                object-fit: contain;
+            }
 
-        .footer-logo span {
-            font-weight: 700;
-            font-size: 1.2rem;
-        }
+            .footer-logo span {
+                font-weight: 700;
+                font-size: 1.1rem;
+            }
 
         .footer-section h3 {
             margin-bottom: 1.5rem;
@@ -376,9 +384,9 @@
             list-style: none;
         }
 
-        .footer-section ul li {
-            margin-bottom: 0.8rem;
-        }
+            .footer-section ul li {
+                margin-bottom: 0.8rem;
+            }
 
         .footer-section a {
             color: rgba(255,255,255,0.8);
@@ -387,9 +395,9 @@
             font-size: 0.95rem;
         }
 
-        .footer-section a:hover {
-            color: var(--primary-color);
-        }
+            .footer-section a:hover {
+                color: var(--primary-color);
+            }
 
         .contact-info {
             display: flex;
@@ -403,15 +411,15 @@
             align-items: flex-start;
         }
 
-        .contact-item .icon {
-            font-size: 1.5rem;
-            flex-shrink: 0;
-        }
+            .contact-item .icon {
+                font-size: 1.5rem;
+                flex-shrink: 0;
+            }
 
-        .contact-item p {
-            font-size: 0.9rem;
-            line-height: 1.5;
-        }
+            .contact-item p {
+                font-size: 0.9rem;
+                line-height: 1.5;
+            }
 
         .footer-bottom {
             border-top: 1px solid rgba(255,255,255,0.1);
@@ -425,19 +433,20 @@
             margin-top: 1rem;
         }
 
-        .footer-links a {
-            margin: 0 10px;
-        }
+            .footer-links a {
+                margin: 0 10px;
+            }
 
-        .footer-links span {
-            color: rgba(255,255,255,0.5);
-        }
+            .footer-links span {
+                color: rgba(255,255,255,0.5);
+            }
 
         @keyframes fadeInUp {
             from {
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -459,9 +468,9 @@
                 z-index: 999;
             }
 
-            .nav-links.active {
-                display: flex;
-            }
+                .nav-links.active {
+                    display: flex;
+                }
 
             .hamburger {
                 display: flex;
@@ -489,7 +498,7 @@
                 grid-template-columns: 1fr;
             }
 
-            .mascot-placeholder {
+            .company-logo-display {
                 width: 100%;
                 max-width: 300px;
                 height: 300px;
@@ -508,7 +517,11 @@
 
         @media (max-width: 480px) {
             .logo img {
-                height: 40px;
+                height: 45px;
+            }
+
+            .logo-text {
+                font-size: 0.9rem;
             }
 
             .hero h1 {
@@ -539,12 +552,8 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
-                <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
-                    <circle cx="25" cy="25" r="24" stroke="#00a878" stroke-width="2"/>
-                    <path d="M25 10L35 20L35 35H15L15 20L25 10Z" fill="#00a878" opacity="0.2"/>
-                    <rect x="20" y="25" width="10" height="10" fill="#ffd60a"/>
-                </svg>
-                <span class="logo-text">Your Company</span>
+                <img src="myslogo.png" alt="Maruthi Yukta Solutions">
+                <span class="logo-text">Maruthi Yukta Solutions</span>
             </div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
@@ -557,9 +566,7 @@
                         <a href="#services">Electrical</a>
                     </div>
                 </li>
-                <li><a href="#property">Property Management</a></li>
                 <li><a href="#interior">Interior Design</a></li>
-                <li><a href="#careers">Careers</a></li>
                 <li><a href="#partner">Partner With Us</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
@@ -575,7 +582,7 @@
     <section class="hero" id="home">
         <div class="hero-content">
             <h1>SAFE HAVENS, PEST-FREE ZONES:</h1>
-            <p>TRUST YOUR COMPANY FOR RELIABLE AND EFFECTIVE PEST CONTROL</p>
+            <p>TRUST MARUTHI YUKTA SOLUTIONS FOR RELIABLE AND EFFECTIVE PEST CONTROL</p>
             <button class="btn-primary">Contact Us Today!</button>
         </div>
     </section>
@@ -585,12 +592,12 @@
         <div class="container">
             <h2>Our Services</h2>
             <p class="services-intro">Our team of experts is dedicated to providing you with the highest quality of service. We use the latest technology and techniques to keep your property clean, safe, and secure.</p>
-            
+
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 100 100">
-                            <path d="M30 40h40v30H30z M35 40v-5 M65 40v-5 M40 70h20v10H40z" stroke="#00a878" stroke-width="2" fill="none"/>
+                            <path d="M30 40h40v30H30z M35 40v-5 M65 40v-5 M40 70h20v10H40z" stroke="#1abc9c" stroke-width="2" fill="none" />
                         </svg>
                     </div>
                     <h3>Plumbing</h3>
@@ -599,7 +606,7 @@
                 <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 100 100">
-                            <path d="M50 20L75 35v30H25V35L50 20z M35 50v15 M65 50v15" stroke="#00a878" stroke-width="2" fill="none"/>
+                            <path d="M50 20L75 35v30H25V35L50 20z M35 50v15 M65 50v15" stroke="#1abc9c" stroke-width="2" fill="none" />
                         </svg>
                     </div>
                     <h3>Renovation</h3>
@@ -608,9 +615,9 @@
                 <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 100 100">
-                            <rect x="25" y="30" width="50" height="35" stroke="#00a878" stroke-width="2" fill="none"/>
-                            <circle cx="40" cy="50" r="4" fill="#00a878"/>
-                            <circle cx="60" cy="50" r="4" fill="#00a878"/>
+                            <rect x="25" y="30" width="50" height="35" stroke="#1abc9c" stroke-width="2" fill="none" />
+                            <circle cx="40" cy="50" r="4" fill="#1abc9c" />
+                            <circle cx="60" cy="50" r="4" fill="#1abc9c" />
                         </svg>
                     </div>
                     <h3>Appliances</h3>
@@ -619,7 +626,7 @@
                 <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 100 100">
-                            <path d="M40 25L50 20L60 25v50H40z M45 45h10 M45 55h10" stroke="#00a878" stroke-width="2" fill="none"/>
+                            <path d="M40 25L50 20L60 25v50H40z M45 45h10 M45 55h10" stroke="#1abc9c" stroke-width="2" fill="none" />
                         </svg>
                     </div>
                     <h3>Painting</h3>
@@ -628,7 +635,7 @@
                 <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 100 100">
-                            <path d="M25 30h50v40H25z M35 30v-5 M65 30v-5 M40 70l-8 10h36l-8-10" stroke="#00a878" stroke-width="2" fill="none"/>
+                            <path d="M25 30h50v40H25z M35 30v-5 M65 30v-5 M40 70l-8 10h36l-8-10" stroke="#1abc9c" stroke-width="2" fill="none" />
                         </svg>
                     </div>
                     <h3>Electrical</h3>
@@ -637,7 +644,7 @@
                 <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 100 100">
-                            <path d="M50 20c15 0 25 10 25 25s-10 25-25 25-25-10-25-25 10-25 25-25z M50 35v15 M43 42h14" stroke="#00a878" stroke-width="2" fill="none"/>
+                            <path d="M50 20c15 0 25 10 25 25s-10 25-25 25-25-10-25-25 10-25 25-25z M50 35v15 M43 42h14" stroke="#1abc9c" stroke-width="2" fill="none" />
                         </svg>
                     </div>
                     <h3>Pest Control</h3>
@@ -646,7 +653,7 @@
                 <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 100 100">
-                            <path d="M35 35l15-10l15 10v25H35z M45 45v15 M55 45v15" stroke="#00a878" stroke-width="2" fill="none"/>
+                            <path d="M35 35l15-10l15 10v25H35z M45 45v15 M55 45v15" stroke="#1abc9c" stroke-width="2" fill="none" />
                         </svg>
                     </div>
                     <h3>Carpentry</h3>
@@ -655,7 +662,7 @@
                 <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 100 100">
-                            <path d="M30 50h40 M50 30v40 M35 45c0-5 5-10 15-10s15 5 15 10" stroke="#00a878" stroke-width="2" fill="none"/>
+                            <path d="M30 50h40 M50 30v40 M35 45c0-5 5-10 15-10s15 5 15 10" stroke="#1abc9c" stroke-width="2" fill="none" />
                         </svg>
                     </div>
                     <h3>Cleaning</h3>
@@ -664,11 +671,11 @@
                 <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 100 100">
-                            <circle cx="50" cy="45" r="12" stroke="#00a878" stroke-width="2" fill="none"/>
-                            <path d="M50 30v30 M38 45h24" stroke="#00a878" stroke-width="2" fill="none"/>
-                            <circle cx="35" cy="65" r="3" fill="#00a878"/>
-                            <circle cx="50" cy="68" r="3" fill="#00a878"/>
-                            <circle cx="65" cy="65" r="3" fill="#00a878"/>
+                            <circle cx="50" cy="45" r="12" stroke="#1abc9c" stroke-width="2" fill="none" />
+                            <path d="M50 30v30 M38 45h24" stroke="#1abc9c" stroke-width="2" fill="none" />
+                            <circle cx="35" cy="65" r="3" fill="#1abc9c" />
+                            <circle cx="50" cy="68" r="3" fill="#1abc9c" />
+                            <circle cx="65" cy="65" r="3" fill="#1abc9c" />
                         </svg>
                     </div>
                     <h3>Manpower</h3>
@@ -677,7 +684,7 @@
                 <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 100 100">
-                            <path d="M25 35h50v30H25z M30 35h40v-5H30z M35 65h30v10H35z" stroke="#00a878" stroke-width="2" fill="none"/>
+                            <path d="M25 35h50v30H25z M30 35h40v-5H30z M35 65h30v10H35z" stroke="#1abc9c" stroke-width="2" fill="none" />
                         </svg>
                     </div>
                     <h3>Fire & Security</h3>
@@ -686,7 +693,7 @@
                 <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 100 100">
-                            <path d="M30 40h40v25H30z M40 40v-8 M60 40v-8 M35 65h30v8H35z" stroke="#00a878" stroke-width="2" fill="none"/>
+                            <path d="M30 40h40v25H30z M40 40v-8 M60 40v-8 M35 65h30v8H35z" stroke="#1abc9c" stroke-width="2" fill="none" />
                         </svg>
                     </div>
                     <h3>AMC</h3>
@@ -695,7 +702,7 @@
                 <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 100 100">
-                            <path d="M25 45h50 M50 25v50 M35 35l-8-8 M65 35l8-8 M35 65l-8 8 M65 65l8 8" stroke="#00a878" stroke-width="2" fill="none"/>
+                            <path d="M25 45h50 M50 25v50 M35 35l-8-8 M65 35l8-8 M35 65l-8 8 M65 65l8 8" stroke="#1abc9c" stroke-width="2" fill="none" />
                         </svg>
                     </div>
                     <h3>Repairs & Maintenance</h3>
@@ -704,7 +711,7 @@
                 <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 100 100">
-                            <path d="M30 35h40v30H30z M35 35h30v-8H35z M40 65h20v10H40z M45 45h10 M45 55h10" stroke="#00a878" stroke-width="2" fill="none"/>
+                            <path d="M30 35h40v30H30z M35 35h30v-8H35z M40 65h20v10H40z M45 45h10 M45 55h10" stroke="#1abc9c" stroke-width="2" fill="none" />
                         </svg>
                     </div>
                     <h3>Plumbing, Electrical & Carpentry</h3>
@@ -717,47 +724,47 @@
     <section class="about" id="about">
         <div class="container about-content">
             <div class="about-text">
-                <h2>ABOUT YOUR COMPANY</h2>
-                <p>Your Company is a leading on-demand facility management service platform that delivers exceptional end-to-end services for your properties. Whether you need help with corporate offices, commercial spaces, retail, banking & non-banking, healthcare, IT parks, or residential properties, we are here to help you.</p>
-                
+                <h2>ABOUT MARUTHI YUKTA SOLUTIONS</h2>
+                <p>Maruthi Yukta Solutions is a leading on-demand facility management service platform that delivers exceptional end-to-end services for your properties. Whether you need help with corporate offices, commercial spaces, retail, banking & non-banking, healthcare, IT parks, or residential properties, we are here to help you.</p>
+
                 <p>We also offer a wide range of other services, including:</p>
-                
+
                 <div class="about-features">
                     <div class="feature-item">
                         <svg class="check-icon" viewBox="0 0 24 24">
-                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="#00a878"/>
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="#1abc9c" />
                         </svg>
                         <span>Maintenance and repairs</span>
                     </div>
                     <div class="feature-item">
                         <svg class="check-icon" viewBox="0 0 24 24">
-                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="#00a878"/>
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="#1abc9c" />
                         </svg>
                         <span>Janitorial services</span>
                     </div>
                     <div class="feature-item">
                         <svg class="check-icon" viewBox="0 0 24 24">
-                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="#00a878"/>
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="#1abc9c" />
                         </svg>
                         <span>Landscape and groundskeeping</span>
                     </div>
                     <div class="feature-item">
                         <svg class="check-icon" viewBox="0 0 24 24">
-                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="#00a878"/>
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="#1abc9c" />
                         </svg>
                         <span>Security services</span>
                     </div>
                     <div class="feature-item">
                         <svg class="check-icon" viewBox="0 0 24 24">
-                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="#00a878"/>
+                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="#1abc9c" />
                         </svg>
                         <span>Pest control</span>
                     </div>
                 </div>
             </div>
             <div class="about-image">
-                <div class="mascot-placeholder">
-                    <p>Your Mascot Here</p>
+                <div class="company-logo-display">
+                    <img src="myslogo.png" alt="Maruthi Yukta Solutions Logo">
                 </div>
             </div>
         </div>
@@ -768,12 +775,8 @@
         <div class="footer-container">
             <div class="footer-section">
                 <div class="footer-logo">
-                    <svg width="40" height="40" viewBox="0 0 50 50" fill="none">
-                        <circle cx="25" cy="25" r="24" stroke="#00a878" stroke-width="2"/>
-                        <path d="M25 10L35 20L35 35H15L15 20L25 10Z" fill="#00a878" opacity="0.2"/>
-                        <rect x="20" y="25" width="10" height="10" fill="#ffd60a"/>
-                    </svg>
-                    <span>Your Company</span>
+                    <img src="myslogo.png" alt="Maruthi Yukta Solutions">
+                    <span>Maruthi Yukta Solutions</span>
                 </div>
                 <p>Your Satisfaction Is Our Top Priority.</p>
             </div>
@@ -802,7 +805,7 @@
             </div>
 
             <div class="footer-section contact-info">
-                <h3>Your Company Name</h3>
+                <h3>Maruthi Yukta Solutions</h3>
                 <div class="contact-item">
                     <span class="icon">📍</span>
                     <p>Plot No 71, 4th Floor, GAR 71 Liberty Place, Uppal Bhagath, Near Nagole Metro Station 500039</p>
@@ -813,13 +816,13 @@
                 </div>
                 <div class="contact-item">
                     <span class="icon">✉️</span>
-                    <p>support@yourcompany.in</p>
+                    <p>support@maruthiyuktasolutions.in</p>
                 </div>
             </div>
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2023 Your Company Solutions Private Limited. Designed by Your Company. All Rights Reserved.</p>
+            <p>&copy; 2024 Maruthi Yukta Solutions Private Limited. All Rights Reserved.</p>
             <div class="footer-links">
                 <a href="#privacy">Privacy Policy</a>
                 <span>|</span>
